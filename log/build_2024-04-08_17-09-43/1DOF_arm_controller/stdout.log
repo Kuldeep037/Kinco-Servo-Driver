@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/entry_points.txt
+writing requirements to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/requires.txt
+writing top-level names to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/top_level.txt
+reading manifest file '../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying 1DOF_arm_controller/gui_node.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+copying 1DOF_arm_controller/passive_mode.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+running install
+running install_lib
+copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/gui_node.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/passive_mode.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/gui_node.py to gui_node.cpython-310.pyc
+byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/passive_mode.py to passive_mode.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing application_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+Installing gui_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+Installing serial_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+Installing test_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+writing list of installed files to '/home/rosbot/arm_ws/build/1DOF_arm_controller/install.log'

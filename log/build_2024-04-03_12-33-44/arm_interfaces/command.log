@@ -1,0 +1,4 @@
+Invoking command in '/home/rosbot/arm_ws/build/arm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/arm_ws/install/1DOF_arm_controller:/opt/ros/humble /usr/bin/cmake --build /home/rosbot/arm_ws/build/arm_interfaces -- -j12 -l12
+Invoked command in '/home/rosbot/arm_ws/build/arm_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/arm_ws/install/1DOF_arm_controller:/opt/ros/humble /usr/bin/cmake --build /home/rosbot/arm_ws/build/arm_interfaces -- -j12 -l12
+Invoking command in '/home/rosbot/arm_ws/build/arm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/arm_ws/install/1DOF_arm_controller:/opt/ros/humble /usr/bin/cmake --install /home/rosbot/arm_ws/build/arm_interfaces
+Invoked command in '/home/rosbot/arm_ws/build/arm_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/arm_ws/install/1DOF_arm_controller:/opt/ros/humble /usr/bin/cmake --install /home/rosbot/arm_ws/build/arm_interfaces

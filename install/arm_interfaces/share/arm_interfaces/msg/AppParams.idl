@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from arm_interfaces/msg/AppParams.msg
+// generated code does not contain a copyright notice
+
+
+module arm_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "repetitions,start_point,end_point,speed")
+    struct AppParams {
+      int32 repeat;
+
+      double start;
+
+      double end;
+
+      int32 speed;
+
+      int32 torque;
+
+      int32 threshold;
+
+      int32 delay;
+    };
+  };
+};

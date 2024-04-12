@@ -1,0 +1,9 @@
+{
+  "package_name": "arm_interfaces",
+  "non_idl_tuples": [
+    "/home/rosbot/arm_ws/src/arm_interfaces:msg/SensorData.msg",
+    "/home/rosbot/arm_ws/src/arm_interfaces:msg/MotorCmd.msg",
+    "/home/rosbot/arm_ws/src/arm_interfaces:msg/AppParams.msg",
+    "/home/rosbot/arm_ws/src/arm_interfaces:srv/SensorFeedback.srv"
+  ]
+}

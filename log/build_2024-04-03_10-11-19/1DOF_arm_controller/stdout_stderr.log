@@ -1,0 +1,54 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+Removing /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF-arm-controller.egg-link (link to .)
+running egg_info
+writing ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/entry_points.txt
+writing requirements to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/requires.txt
+writing top-level names to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/top_level.txt
+reading manifest file '../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/rosbot/arm_ws/build/1DOF_arm_controller/build
+creating /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib
+creating /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+copying 1DOF_arm_controller/KincoApps.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+copying 1DOF_arm_controller/registers.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+copying 1DOF_arm_controller/__init__.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+copying 1DOF_arm_controller/KincoServoDriver.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+copying 1DOF_arm_controller/gui_node.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+copying 1DOF_arm_controller/apps_node.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+copying 1DOF_arm_controller/serial_node.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+copying 1DOF_arm_controller/calculations.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+running install
+running install_lib
+creating /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/KincoApps.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/registers.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/__init__.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/KincoServoDriver.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/gui_node.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/apps_node.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/serial_node.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/calculations.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/KincoApps.py to KincoApps.cpython-310.pyc
+byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/registers.py to registers.cpython-310.pyc
+byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/KincoServoDriver.py to KincoServoDriver.cpython-310.pyc
+byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/gui_node.py to gui_node.cpython-310.pyc
+byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/apps_node.py to apps_node.cpython-310.pyc
+byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/serial_node.py to serial_node.cpython-310.pyc
+byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/calculations.py to calculations.cpython-310.pyc
+running install_data
+copying resource/1DOF_arm_controller -> /home/rosbot/arm_ws/install/1DOF_arm_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/rosbot/arm_ws/install/1DOF_arm_controller/share/1DOF_arm_controller
+running install_egg_info
+Copying ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing application_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+Installing gui_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+Installing serial_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+writing list of installed files to '/home/rosbot/arm_ws/build/1DOF_arm_controller/install.log'

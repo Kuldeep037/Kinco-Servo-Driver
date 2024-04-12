@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from arm_interfaces/srv/SensorFeedback.srv
+// generated code does not contain a copyright notice
+
+
+module arm_interfaces {
+  module srv {
+    struct SensorFeedback_Request {
+      int32 sensor;
+    };
+    struct SensorFeedback_Response {
+      double data;
+    };
+  };
+};

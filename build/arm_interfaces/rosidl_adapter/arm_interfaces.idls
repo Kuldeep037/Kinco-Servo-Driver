@@ -1,0 +1,4 @@
+/home/rosbot/arm_ws/build/arm_interfaces/rosidl_adapter/arm_interfaces:msg/SensorData.idl
+/home/rosbot/arm_ws/build/arm_interfaces/rosidl_adapter/arm_interfaces:msg/MotorCmd.idl
+/home/rosbot/arm_ws/build/arm_interfaces/rosidl_adapter/arm_interfaces:msg/AppParams.idl
+/home/rosbot/arm_ws/build/arm_interfaces/rosidl_adapter/arm_interfaces:srv/SensorFeedback.idl

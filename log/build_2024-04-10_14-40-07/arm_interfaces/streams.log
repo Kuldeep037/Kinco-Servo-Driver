@@ -1,0 +1,323 @@
+[0.007s] Invoking command in '/home/rosbot/arm_ws/build/arm_interfaces': AMENT_PREFIX_PATH=/home/rosbot/arm_ws/install/1DOF_arm_controller:/home/rosbot/arm_ws/install/arm_interfaces:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/arm_ws/install/1DOF_arm_controller:/opt/ros/humble PYTHONPATH=/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages:/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/rosbot/arm_ws/build/arm_interfaces -- -j12 -l12
+[0.038s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.165s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.168s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.172s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.218s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.466s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.611s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.804s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.824s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.845s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.845s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.845s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.857s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.901s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.902s] -- Added test 'lint_cmake' to check CMake code style
+[0.903s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.905s] -- Added test 'xmllint' to check XML markup files
+[0.911s] -- Configuring done
+[0.954s] -- Generating done
+[0.957s] -- Build files have been written to: /home/rosbot/arm_ws/build/arm_interfaces
+[0.975s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.982s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.990s] [  3%] Built target ament_cmake_python_copy_arm_interfaces
+[1.236s] running egg_info
+[1.236s] writing arm_interfaces.egg-info/PKG-INFO
+[1.236s] writing dependency_links to arm_interfaces.egg-info/dependency_links.txt
+[1.237s] writing top-level names to arm_interfaces.egg-info/top_level.txt
+[1.239s] reading manifest file 'arm_interfaces.egg-info/SOURCES.txt'
+[1.239s] writing manifest file 'arm_interfaces.egg-info/SOURCES.txt'
+[1.260s] [  3%] Built target ament_cmake_python_build_arm_interfaces_egg
+[1.341s] [  3%] Built target arm_interfaces__cpp
+[1.349s] [  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.350s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.350s] [  9%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.350s] [35m[1mConsolidate compiler generated dependencies of target arm_interfaces__rosidl_generator_c[0m
+[1.360s] [ 12%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/motor_cmd__functions.c.o[0m
+[1.360s] [ 12%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/sensor_data__functions.c.o[0m
+[1.363s] [ 16%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/app_params__functions.c.o[0m
+[1.363s] [ 16%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/srv/detail/sensor_feedback__functions.c.o[0m
+[1.480s] [ 18%] [32m[1mLinking C shared library libarm_interfaces__rosidl_generator_c.so[0m
+[1.524s] [ 18%] Built target arm_interfaces__rosidl_generator_c
+[1.532s] [ 20%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.532s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.534s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.625s] [35m[1mConsolidate compiler generated dependencies of target arm_interfaces__rosidl_typesupport_cpp[0m
+[1.638s] [ 25%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_interfaces/msg/motor_cmd__type_support.cpp.o[0m
+[1.638s] [ 27%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_interfaces/msg/sensor_data__type_support.cpp.o[0m
+[1.639s] [ 29%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_interfaces/msg/app_params__type_support.cpp.o[0m
+[1.640s] [ 30%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arm_interfaces/srv/sensor_feedback__type_support.cpp.o[0m
+[1.719s] [35m[1mConsolidate compiler generated dependencies of target arm_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[1.736s] [ 36%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_interfaces/srv/detail/dds_fastrtps/sensor_feedback__type_support.cpp.o[0m
+[1.736s] [ 36%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_interfaces/msg/detail/dds_fastrtps/motor_cmd__type_support.cpp.o[0m
+[1.736s] [ 36%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_interfaces/msg/detail/dds_fastrtps/app_params__type_support.cpp.o[0m
+[1.737s] [ 38%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arm_interfaces/msg/detail/dds_fastrtps/sensor_data__type_support.cpp.o[0m
+[1.842s] [35m[1mConsolidate compiler generated dependencies of target arm_interfaces__rosidl_typesupport_introspection_cpp[0m
+[1.858s] [ 40%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_interfaces/msg/detail/sensor_data__type_support.cpp.o[0m
+[1.896s] [35m[1mConsolidate compiler generated dependencies of target arm_interfaces__rosidl_typesupport_c[0m
+[1.913s] [ 41%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_interfaces/msg/sensor_data__type_support.cpp.o[0m
+[1.989s] [ 43%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_interfaces/msg/motor_cmd__type_support.cpp.o[0m
+[2.076s] [ 45%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_interfaces/msg/app_params__type_support.cpp.o[0m
+[2.091s] [35m[1mConsolidate compiler generated dependencies of target arm_interfaces__rosidl_typesupport_introspection_c[0m
+[2.091s] [ 47%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_interfaces/msg/detail/motor_cmd__type_support.cpp.o[0m
+[2.100s] [ 49%] [32m[1mLinking CXX shared library libarm_interfaces__rosidl_typesupport_cpp.so[0m
+[2.105s] [ 52%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_interfaces/msg/detail/app_params__type_support.cpp.o[0m
+[2.105s] [ 52%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_interfaces/msg/detail/sensor_data__type_support.c.o[0m
+[2.108s] [ 54%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arm_interfaces/srv/detail/sensor_feedback__type_support.cpp.o[0m
+[2.118s] [ 56%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/arm_interfaces/srv/sensor_feedback__type_support.cpp.o[0m
+[2.155s] [ 58%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_interfaces/msg/detail/motor_cmd__type_support.c.o[0m
+[2.182s] [ 58%] Built target arm_interfaces__rosidl_typesupport_cpp
+[2.192s] [ 60%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_interfaces/msg/detail/app_params__type_support.c.o[0m
+[2.192s] [ 61%] [32m[1mLinking CXX shared library libarm_interfaces__rosidl_typesupport_c.so[0m
+[2.195s] [35m[1mConsolidate compiler generated dependencies of target arm_interfaces__rosidl_typesupport_fastrtps_c[0m
+[2.210s] [ 63%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_interfaces/srv/detail/sensor_feedback__type_support.c.o[0m
+[2.218s] [ 65%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_interfaces/msg/detail/sensor_data__type_support_c.cpp.o[0m
+[2.257s] [ 67%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_interfaces/msg/detail/motor_cmd__type_support_c.cpp.o[0m
+[2.266s] [ 67%] Built target arm_interfaces__rosidl_typesupport_c
+[2.289s] [ 69%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_interfaces/msg/detail/app_params__type_support_c.cpp.o[0m
+[2.293s] [ 70%] [32mBuilding CXX object CMakeFiles/arm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arm_interfaces/srv/detail/sensor_feedback__type_support_c.cpp.o[0m
+[2.304s] [ 72%] [32m[1mLinking C shared library libarm_interfaces__rosidl_typesupport_introspection_c.so[0m
+[2.338s] [ 74%] [32m[1mLinking CXX shared library libarm_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.349s] [ 74%] Built target arm_interfaces__rosidl_typesupport_introspection_c
+[2.450s] [ 74%] Built target arm_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.618s] [ 76%] [32m[1mLinking CXX shared library libarm_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.650s] [ 76%] Built target arm_interfaces__rosidl_typesupport_introspection_cpp
+[2.699s] [ 78%] [32m[1mLinking CXX shared library libarm_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[2.756s] [ 78%] Built target arm_interfaces__rosidl_typesupport_fastrtps_c
+[2.770s] [ 78%] Built target arm_interfaces
+[2.785s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.318s] [ 80%] Built target arm_interfaces__py
+[3.327s] [35m[1mConsolidate compiler generated dependencies of target arm_interfaces__rosidl_generator_py[0m
+[3.340s] [ 85%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arm_interfaces/msg/_motor_cmd_s.c.o[0m
+[3.340s] [ 85%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arm_interfaces/srv/_sensor_feedback_s.c.o[0m
+[3.340s] [ 85%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arm_interfaces/msg/_sensor_data_s.c.o[0m
+[3.340s] [ 87%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arm_interfaces/msg/_app_params_s.c.o[0m
+[3.456s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/arm_interfaces/libarm_interfaces__rosidl_generator_py.so[0m
+[3.485s] [ 89%] Built target arm_interfaces__rosidl_generator_py
+[3.493s] [35m[1mConsolidate compiler generated dependencies of target arm_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[3.493s] [35m[1mConsolidate compiler generated dependencies of target arm_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[3.494s] [35m[1mConsolidate compiler generated dependencies of target arm_interfaces__rosidl_typesupport_c__pyext[0m
+[3.504s] [ 94%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/arm_interfaces/_arm_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[3.504s] [ 94%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/arm_interfaces/_arm_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.504s] [ 94%] [32mBuilding C object CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/arm_interfaces/_arm_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.585s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/arm_interfaces/arm_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.585s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/arm_interfaces/arm_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.586s] [100%] [32m[1mLinking C shared library rosidl_generator_py/arm_interfaces/arm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.609s] [100%] Built target arm_interfaces__rosidl_typesupport_introspection_c__pyext
+[3.610s] [100%] Built target arm_interfaces__rosidl_typesupport_c__pyext
+[3.610s] [100%] Built target arm_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[3.619s] Invoked command in '/home/rosbot/arm_ws/build/arm_interfaces' returned '0': AMENT_PREFIX_PATH=/home/rosbot/arm_ws/install/1DOF_arm_controller:/home/rosbot/arm_ws/install/arm_interfaces:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/arm_ws/install/1DOF_arm_controller:/opt/ros/humble PYTHONPATH=/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages:/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/rosbot/arm_ws/build/arm_interfaces -- -j12 -l12
+[3.696s] Invoking command in '/home/rosbot/arm_ws/build/arm_interfaces': AMENT_PREFIX_PATH=/home/rosbot/arm_ws/install/1DOF_arm_controller:/home/rosbot/arm_ws/install/arm_interfaces:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/arm_ws/install/1DOF_arm_controller:/opt/ros/humble PYTHONPATH=/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages:/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/rosbot/arm_ws/build/arm_interfaces
+[3.701s] -- Install configuration: ""
+[3.701s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/launch
+[3.701s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/launch/kinco.launch.py
+[3.701s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/ament_index/resource_index/rosidl_interfaces/arm_interfaces
+[3.702s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces
+[3.702s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg
+[3.702s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail
+[3.702s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/sensor_data__functions.c
+[3.702s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/motor_cmd__functions.c
+[3.702s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/app_params__struct.h
+[3.702s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/motor_cmd__functions.h
+[3.702s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/sensor_data__struct.h
+[3.702s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/sensor_data__functions.h
+[3.702s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/motor_cmd__struct.h
+[3.702s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/app_params__functions.h
+[3.702s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/app_params__type_support.h
+[3.702s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/motor_cmd__type_support.h
+[3.702s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/app_params__functions.c
+[3.703s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/sensor_data__type_support.h
+[3.703s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/motor_cmd.h
+[3.703s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/app_params.h
+[3.703s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/sensor_data.h
+[3.703s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.703s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv
+[3.703s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/sensor_feedback.h
+[3.703s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail
+[3.703s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/sensor_feedback__struct.h
+[3.703s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/sensor_feedback__functions.c
+[3.703s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/sensor_feedback__functions.h
+[3.703s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/sensor_feedback__type_support.h
+[3.704s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/environment/library_path.sh
+[3.704s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/environment/library_path.dsv
+[3.704s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_generator_c.so
+[3.704s] -- Set runtime path of "/home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_generator_c.so" to ""
+[3.704s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces
+[3.704s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg
+[3.704s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.704s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail
+[3.705s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/sensor_data__rosidl_typesupport_fastrtps_c.h
+[3.705s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/motor_cmd__rosidl_typesupport_fastrtps_c.h
+[3.705s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/app_params__rosidl_typesupport_fastrtps_c.h
+[3.705s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv
+[3.705s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail
+[3.705s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/sensor_feedback__rosidl_typesupport_fastrtps_c.h
+[3.705s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.705s] -- Set runtime path of "/home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[3.705s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces
+[3.705s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg
+[3.705s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail
+[3.705s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/sensor_data__type_support.c
+[3.705s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/motor_cmd__type_support.c
+[3.706s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/app_params__rosidl_typesupport_introspection_c.h
+[3.706s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/app_params__type_support.c
+[3.706s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/motor_cmd__rosidl_typesupport_introspection_c.h
+[3.706s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/sensor_data__rosidl_typesupport_introspection_c.h
+[3.706s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.706s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv
+[3.706s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail
+[3.706s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/sensor_feedback__rosidl_typesupport_introspection_c.h
+[3.706s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/sensor_feedback__type_support.c
+[3.706s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_introspection_c.so
+[3.706s] -- Set runtime path of "/home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[3.706s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_c.so
+[3.707s] -- Set runtime path of "/home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_c.so" to ""
+[3.707s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces
+[3.707s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg
+[3.707s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/motor_cmd.hpp
+[3.707s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/sensor_data.hpp
+[3.707s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail
+[3.707s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/sensor_data__struct.hpp
+[3.707s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/motor_cmd__traits.hpp
+[3.707s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/sensor_data__builder.hpp
+[3.708s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/app_params__struct.hpp
+[3.708s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/motor_cmd__builder.hpp
+[3.708s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/app_params__traits.hpp
+[3.708s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/app_params__builder.hpp
+[3.708s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/sensor_data__traits.hpp
+[3.708s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/motor_cmd__struct.hpp
+[3.708s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/app_params.hpp
+[3.708s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv
+[3.708s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/sensor_feedback.hpp
+[3.708s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail
+[3.708s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/sensor_feedback__traits.hpp
+[3.709s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/sensor_feedback__struct.hpp
+[3.709s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/sensor_feedback__builder.hpp
+[3.709s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces
+[3.709s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg
+[3.709s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail
+[3.709s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/app_params__rosidl_typesupport_fastrtps_cpp.hpp
+[3.709s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/motor_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[3.709s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/sensor_data__rosidl_typesupport_fastrtps_cpp.hpp
+[3.709s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/dds_fastrtps
+[3.709s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.709s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv
+[3.709s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail
+[3.709s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/sensor_feedback__rosidl_typesupport_fastrtps_cpp.hpp
+[3.709s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/dds_fastrtps
+[3.710s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.710s] -- Set runtime path of "/home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.710s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces
+[3.710s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg
+[3.710s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail
+[3.710s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/sensor_data__type_support.cpp
+[3.710s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/motor_cmd__type_support.cpp
+[3.710s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/app_params__type_support.cpp
+[3.710s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/sensor_data__rosidl_typesupport_introspection_cpp.hpp
+[3.710s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/motor_cmd__rosidl_typesupport_introspection_cpp.hpp
+[3.710s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/msg/detail/app_params__rosidl_typesupport_introspection_cpp.hpp
+[3.710s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv
+[3.711s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail
+[3.711s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/sensor_feedback__type_support.cpp
+[3.711s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/include/arm_interfaces/arm_interfaces/srv/detail/sensor_feedback__rosidl_typesupport_introspection_cpp.hpp
+[3.711s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.711s] -- Set runtime path of "/home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[3.711s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_cpp.so
+[3.711s] -- Set runtime path of "/home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_cpp.so" to ""
+[3.711s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/environment/pythonpath.sh
+[3.712s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/environment/pythonpath.dsv
+[3.712s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces-0.0.0-py3.10.egg-info
+[3.712s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[3.712s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.712s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.712s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[3.712s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces
+[3.712s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/arm_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.712s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/_arm_interfaces_s.ep.rosidl_typesupport_c.c
+[3.712s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/arm_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.712s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/msg
+[3.713s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/msg/_app_params.py
+[3.713s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/msg/__init__.py
+[3.713s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/msg/_motor_cmd_s.c
+[3.713s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/msg/_motor_cmd.py
+[3.713s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/msg/_sensor_data_s.c
+[3.713s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/msg/_sensor_data.py
+[3.713s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/msg/_app_params_s.c
+[3.713s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/_arm_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.713s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/__init__.py
+[3.713s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/arm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.714s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/srv
+[3.714s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/srv/_sensor_feedback.py
+[3.714s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/srv/__init__.py
+[3.714s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/srv/_sensor_feedback_s.c
+[3.714s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/libarm_interfaces__rosidl_generator_py.so
+[3.714s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/_arm_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.745s] Listing '/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces'...
+[3.745s] Compiling '/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/__init__.py'...
+[3.745s] Listing '/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/msg'...
+[3.745s] Compiling '/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/msg/__init__.py'...
+[3.745s] Compiling '/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/msg/_app_params.py'...
+[3.746s] Compiling '/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/msg/_motor_cmd.py'...
+[3.746s] Compiling '/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/msg/_sensor_data.py'...
+[3.746s] Listing '/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/srv'...
+[3.746s] Compiling '/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/srv/__init__.py'...
+[3.746s] Compiling '/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/srv/_sensor_feedback.py'...
+[3.749s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/arm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.749s] -- Set runtime path of "/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/arm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.749s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/arm_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.749s] -- Set runtime path of "/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/arm_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.750s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/arm_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.750s] -- Set runtime path of "/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages/arm_interfaces/arm_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.750s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_generator_py.so
+[3.750s] -- Set runtime path of "/home/rosbot/arm_ws/install/arm_interfaces/lib/libarm_interfaces__rosidl_generator_py.so" to ""
+[3.750s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/msg/SensorData.idl
+[3.750s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/msg/MotorCmd.idl
+[3.751s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/msg/AppParams.idl
+[3.751s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/srv/SensorFeedback.idl
+[3.751s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/msg/SensorData.msg
+[3.751s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/msg/MotorCmd.msg
+[3.751s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/msg/AppParams.msg
+[3.751s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/srv/SensorFeedback.srv
+[3.751s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/srv/SensorFeedback_Request.msg
+[3.751s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/srv/SensorFeedback_Response.msg
+[3.751s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/ament_index/resource_index/package_run_dependencies/arm_interfaces
+[3.751s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/ament_index/resource_index/parent_prefix_path/arm_interfaces
+[3.751s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/environment/ament_prefix_path.sh
+[3.751s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/environment/ament_prefix_path.dsv
+[3.751s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/environment/path.sh
+[3.752s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/environment/path.dsv
+[3.752s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/local_setup.bash
+[3.752s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/local_setup.sh
+[3.752s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/local_setup.zsh
+[3.752s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/local_setup.dsv
+[3.752s] -- Installing: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/package.dsv
+[3.752s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/ament_index/resource_index/packages/arm_interfaces
+[3.752s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/export_arm_interfaces__rosidl_generator_cExport.cmake
+[3.752s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/export_arm_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.752s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/export_arm_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.752s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/export_arm_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.752s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_cExport.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/export_arm_interfaces__rosidl_generator_cppExport.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/export_arm_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/export_arm_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_cppExport.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/export_arm_interfaces__rosidl_generator_pyExport.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/export_arm_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.753s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.754s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.754s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.754s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.754s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.754s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.754s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfacesConfig.cmake
+[3.754s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfacesConfig-version.cmake
+[3.754s] -- Up-to-date: /home/rosbot/arm_ws/install/arm_interfaces/share/arm_interfaces/package.xml
+[3.756s] Invoked command in '/home/rosbot/arm_ws/build/arm_interfaces' returned '0': AMENT_PREFIX_PATH=/home/rosbot/arm_ws/install/1DOF_arm_controller:/home/rosbot/arm_ws/install/arm_interfaces:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosbot/arm_ws/install/1DOF_arm_controller:/opt/ros/humble PYTHONPATH=/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages:/home/rosbot/arm_ws/install/arm_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/rosbot/arm_ws/build/arm_interfaces

@@ -1,0 +1,26 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating 1DOF_arm_controller.egg-info
+writing 1DOF_arm_controller.egg-info/PKG-INFO
+writing dependency_links to 1DOF_arm_controller.egg-info/dependency_links.txt
+writing entry points to 1DOF_arm_controller.egg-info/entry_points.txt
+writing requirements to 1DOF_arm_controller.egg-info/requires.txt
+writing top-level names to 1DOF_arm_controller.egg-info/top_level.txt
+writing manifest file '1DOF_arm_controller.egg-info/SOURCES.txt'
+reading manifest file '1DOF_arm_controller.egg-info/SOURCES.txt'
+writing manifest file '1DOF_arm_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF-arm-controller.egg-link (link to .)
+Installing application_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+Installing gui_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+Installing serial_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+
+Installed /home/rosbot/arm_ws/build/1DOF_arm_controller
+running symlink_data
+creating /home/rosbot/arm_ws/install/1DOF_arm_controller/share/ament_index
+creating /home/rosbot/arm_ws/install/1DOF_arm_controller/share/ament_index/resource_index
+creating /home/rosbot/arm_ws/install/1DOF_arm_controller/share/ament_index/resource_index/packages
+symbolically linking /home/rosbot/arm_ws/build/1DOF_arm_controller/resource/1DOF_arm_controller -> /home/rosbot/arm_ws/install/1DOF_arm_controller/share/ament_index/resource_index/packages
+symbolically linking /home/rosbot/arm_ws/build/1DOF_arm_controller/package.xml -> /home/rosbot/arm_ws/install/1DOF_arm_controller/share/1DOF_arm_controller

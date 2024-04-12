@@ -1,0 +1,5 @@
+  File "/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/apps_node3.py", line 348
+    app_thread = threading.Thread(target= node.AppMode_callback, args=(str("hello"))
+                                 ^
+SyntaxError: '(' was never closed
+

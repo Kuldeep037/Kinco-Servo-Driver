@@ -1,0 +1,6 @@
+[console_scripts]
+application_node = 1DOF_arm_controller.apps_node:main
+gui_node = 1DOF_arm_controller.gui_node:main
+serial_node = 1DOF_arm_controller.serial_node:main
+test_node = 1DOF_arm_controller.test_node:main
+

@@ -1,0 +1,58 @@
+[0.528s] Invoking command in '/home/rosbot/arm_ws/build/1DOF_arm_controller': PYTHONPATH=/home/rosbot/arm_ws/build/1DOF_arm_controller/prefix_override:/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/rosbot/arm_ws/build/1DOF_arm_controller/build
+[0.745s] running develop
+[0.745s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.745s]   warnings.warn(
+[0.898s] Removing /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF-arm-controller.egg-link (link to .)
+[0.920s] Invoked command in '/home/rosbot/arm_ws/build/1DOF_arm_controller' returned '0': PYTHONPATH=/home/rosbot/arm_ws/build/1DOF_arm_controller/prefix_override:/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/rosbot/arm_ws/build/1DOF_arm_controller/build
+[0.921s] Invoking command in '/home/rosbot/arm_ws/src/1DOF_arm_controller': PYTHONPATH=/home/rosbot/arm_ws/build/1DOF_arm_controller/prefix_override:/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/1DOF_arm_controller build --build-base /home/rosbot/arm_ws/build/1DOF_arm_controller/build install --record /home/rosbot/arm_ws/build/1DOF_arm_controller/install.log --single-version-externally-managed install_data --force
+[1.145s] running egg_info
+[1.146s] writing ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/PKG-INFO
+[1.146s] writing dependency_links to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/dependency_links.txt
+[1.146s] writing entry points to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/entry_points.txt
+[1.146s] writing requirements to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/requires.txt
+[1.146s] writing top-level names to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/top_level.txt
+[1.148s] reading manifest file '../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/SOURCES.txt'
+[1.149s] writing manifest file '../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/SOURCES.txt'
+[1.149s] running build
+[1.149s] running build_py
+[1.149s] creating /home/rosbot/arm_ws/build/1DOF_arm_controller/build
+[1.149s] creating /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib
+[1.149s] creating /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+[1.149s] copying 1DOF_arm_controller/KincoApps.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+[1.149s] copying 1DOF_arm_controller/registers.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+[1.149s] copying 1DOF_arm_controller/__init__.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+[1.149s] copying 1DOF_arm_controller/KincoServoDriver.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+[1.149s] copying 1DOF_arm_controller/gui_node.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+[1.149s] copying 1DOF_arm_controller/apps_node.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+[1.150s] copying 1DOF_arm_controller/serial_node.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+[1.150s] copying 1DOF_arm_controller/calculations.py -> /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller
+[1.150s] running install
+[1.150s] running install_lib
+[1.151s] creating /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+[1.151s] copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/KincoApps.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+[1.151s] copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/registers.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+[1.151s] copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/__init__.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+[1.151s] copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/KincoServoDriver.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+[1.151s] copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/gui_node.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+[1.151s] copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/apps_node.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+[1.151s] copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/serial_node.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+[1.151s] copying /home/rosbot/arm_ws/build/1DOF_arm_controller/build/lib/1DOF_arm_controller/calculations.py -> /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller
+[1.152s] byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/KincoApps.py to KincoApps.cpython-310.pyc
+[1.153s] byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/registers.py to registers.cpython-310.pyc
+[1.154s] byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/__init__.py to __init__.cpython-310.pyc
+[1.154s] byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/KincoServoDriver.py to KincoServoDriver.cpython-310.pyc
+[1.156s] byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/gui_node.py to gui_node.cpython-310.pyc
+[1.157s] byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/apps_node.py to apps_node.cpython-310.pyc
+[1.157s] byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/serial_node.py to serial_node.cpython-310.pyc
+[1.158s] byte-compiling /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller/calculations.py to calculations.cpython-310.pyc
+[1.158s] running install_data
+[1.158s] copying resource/1DOF_arm_controller -> /home/rosbot/arm_ws/install/1DOF_arm_controller/share/ament_index/resource_index/packages
+[1.159s] copying package.xml -> /home/rosbot/arm_ws/install/1DOF_arm_controller/share/1DOF_arm_controller
+[1.159s] running install_egg_info
+[1.160s] Copying ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller-0.0.0-py3.10.egg-info
+[1.161s] running install_scripts
+[1.177s] Installing application_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+[1.177s] Installing gui_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+[1.177s] Installing serial_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+[1.177s] writing list of installed files to '/home/rosbot/arm_ws/build/1DOF_arm_controller/install.log'
+[1.195s] Invoked command in '/home/rosbot/arm_ws/src/1DOF_arm_controller' returned '0': PYTHONPATH=/home/rosbot/arm_ws/build/1DOF_arm_controller/prefix_override:/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/1DOF_arm_controller build --build-base /home/rosbot/arm_ws/build/1DOF_arm_controller/build install --record /home/rosbot/arm_ws/build/1DOF_arm_controller/install.log --single-version-externally-managed install_data --force

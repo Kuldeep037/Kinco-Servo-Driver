@@ -1,0 +1,24 @@
+[0.609s] Invoking command in '/home/rosbot/arm_ws/src/1DOF_arm_controller': PYTHONPATH=/home/rosbot/arm_ws/build/1DOF_arm_controller/prefix_override:/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/1DOF_arm_controller build --build-base /home/rosbot/arm_ws/build/1DOF_arm_controller/build install --record /home/rosbot/arm_ws/build/1DOF_arm_controller/install.log --single-version-externally-managed install_data
+[0.818s] running egg_info
+[0.819s] writing ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/PKG-INFO
+[0.819s] writing dependency_links to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/dependency_links.txt
+[0.819s] writing entry points to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/entry_points.txt
+[0.819s] writing requirements to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/requires.txt
+[0.820s] writing top-level names to ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/top_level.txt
+[0.821s] reading manifest file '../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/SOURCES.txt'
+[0.822s] writing manifest file '../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info/SOURCES.txt'
+[0.822s] running build
+[0.822s] running build_py
+[0.823s] running install
+[0.823s] running install_lib
+[0.825s] running install_data
+[0.825s] running install_egg_info
+[0.826s] removing '/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.827s] Copying ../../build/1DOF_arm_controller/1DOF_arm_controller.egg-info to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF_arm_controller-0.0.0-py3.10.egg-info
+[0.828s] running install_scripts
+[0.845s] Installing application_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+[0.845s] Installing gui_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+[0.845s] Installing serial_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+[0.845s] Installing test_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+[0.846s] writing list of installed files to '/home/rosbot/arm_ws/build/1DOF_arm_controller/install.log'
+[0.862s] Invoked command in '/home/rosbot/arm_ws/src/1DOF_arm_controller' returned '0': PYTHONPATH=/home/rosbot/arm_ws/build/1DOF_arm_controller/prefix_override:/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/1DOF_arm_controller build --build-base /home/rosbot/arm_ws/build/1DOF_arm_controller/build install --record /home/rosbot/arm_ws/build/1DOF_arm_controller/install.log --single-version-externally-managed install_data

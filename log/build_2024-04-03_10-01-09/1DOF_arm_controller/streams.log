@@ -1,0 +1,28 @@
+[0.563s] Invoking command in '/home/rosbot/arm_ws/build/1DOF_arm_controller': PYTHONPATH=/home/rosbot/arm_ws/build/1DOF_arm_controller/prefix_override:/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/rosbot/arm_ws/build/1DOF_arm_controller/build --no-deps symlink_data
+[0.798s] running develop
+[0.803s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.804s]   warnings.warn(
+[0.954s] running egg_info
+[0.954s] creating 1DOF_arm_controller.egg-info
+[0.954s] writing 1DOF_arm_controller.egg-info/PKG-INFO
+[0.954s] writing dependency_links to 1DOF_arm_controller.egg-info/dependency_links.txt
+[0.954s] writing entry points to 1DOF_arm_controller.egg-info/entry_points.txt
+[0.954s] writing requirements to 1DOF_arm_controller.egg-info/requires.txt
+[0.954s] writing top-level names to 1DOF_arm_controller.egg-info/top_level.txt
+[0.955s] writing manifest file '1DOF_arm_controller.egg-info/SOURCES.txt'
+[0.956s] reading manifest file '1DOF_arm_controller.egg-info/SOURCES.txt'
+[0.956s] writing manifest file '1DOF_arm_controller.egg-info/SOURCES.txt'
+[0.957s] running build_ext
+[0.958s] Creating /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages/1DOF-arm-controller.egg-link (link to .)
+[0.958s] Installing application_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+[0.958s] Installing gui_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+[0.959s] Installing serial_node script to /home/rosbot/arm_ws/install/1DOF_arm_controller/lib/1DOF_arm_controller
+[0.959s] 
+[0.959s] Installed /home/rosbot/arm_ws/build/1DOF_arm_controller
+[0.959s] running symlink_data
+[0.959s] creating /home/rosbot/arm_ws/install/1DOF_arm_controller/share/ament_index
+[0.959s] creating /home/rosbot/arm_ws/install/1DOF_arm_controller/share/ament_index/resource_index
+[0.959s] creating /home/rosbot/arm_ws/install/1DOF_arm_controller/share/ament_index/resource_index/packages
+[0.959s] symbolically linking /home/rosbot/arm_ws/build/1DOF_arm_controller/resource/1DOF_arm_controller -> /home/rosbot/arm_ws/install/1DOF_arm_controller/share/ament_index/resource_index/packages
+[0.959s] symbolically linking /home/rosbot/arm_ws/build/1DOF_arm_controller/package.xml -> /home/rosbot/arm_ws/install/1DOF_arm_controller/share/1DOF_arm_controller
+[0.981s] Invoked command in '/home/rosbot/arm_ws/build/1DOF_arm_controller' returned '0': PYTHONPATH=/home/rosbot/arm_ws/build/1DOF_arm_controller/prefix_override:/home/rosbot/arm_ws/install/1DOF_arm_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/rosbot/arm_ws/build/1DOF_arm_controller/build --no-deps symlink_data
