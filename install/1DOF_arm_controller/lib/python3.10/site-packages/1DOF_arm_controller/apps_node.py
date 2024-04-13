@@ -108,7 +108,7 @@ class ApplicationNode(Node,ServoController):
                 if start_point>0 and end_point>0:
                 
                     for i in range(repetitions):
-                            # direction ^= 1
+                         
                         threshold0 = -threshold0
                         threshold1 = -threshold1
                         if threshold0==0 and threshold1==0:
@@ -537,21 +537,26 @@ class ApplicationNode(Node,ServoController):
         current_fb =sensor_fb.current
         position_fb = sensor_fb.position
         # velocity_fb = sensor_fb.velocity
+
+        self.motor_cmd.cmd = 4
+        self.motor_cmd.data = speed           # Set Profile speed
+        self.motor_cmd_pub.publish(self.motor_cmd) 
         motor_ready = False
+
         if start_point==0 and end_point>0:
             while motor_ready==False:
                 position_fb = self.send_request(2)
                 if position_fb!=start_point:     
                     self.motor_cmd.cmd = 1
                     self.motor_cmd.data = int(round(start_point,1)) 
-                    self.motor_cmd_pub.publish(self.motor_cmd)      
+                    self.motor_cmd_pub.publish(self.motor_cmd)     
                     motor_ready = False
                 else:
                     motor_ready = True
                     break
 
             while True:
-                if motor_ready:
+                # if motor_ready:
                     self.motor_cmd.cmd = 5
                     self.motor_cmd.data = direction 
                     self.motor_cmd_pub.publish(self.motor_cmd)
@@ -591,164 +596,164 @@ class ApplicationNode(Node,ServoController):
                             torque_mode = True
                             break
 
-        # elif start_point==0 and end_point<0:
-        #     while motor_ready==False:
-        #         position_fb = self.send_request(2)
-        #         if position_fb!=start_point:     
-        #             self.motor_cmd.cmd = 1
-        #             self.motor_cmd.data = int(round(start_point,1)) 
-        #             self.motor_cmd_pub.publish(self.motor_cmd)      
-        #             motor_ready = False
-        #         else:
-        #             motor_ready = True
-        #             break
+        elif start_point==0 and end_point<0:
+            while motor_ready==False:
+                position_fb = self.send_request(2)
+                if position_fb!=start_point:     
+                    self.motor_cmd.cmd = 1
+                    self.motor_cmd.data = int(round(start_point,1)) 
+                    self.motor_cmd_pub.publish(self.motor_cmd)      
+                    motor_ready = False
+                else:
+                    motor_ready = True
+                    break
 
-        #     # while True:
-        #     #     if motor_ready:
-        #     #         self.motor_cmd.cmd = 5
-        #     #         self.motor_cmd.data = direction 
-        #     #         self.motor_cmd_pub.publish(self.motor_cmd)
-        #     #         while motor_ready:
-        #     #             current_fb = self.send_request(1)
-        #     #             if current_fb>threshold1:  
-        #     #                 self.motor_cmd.cmd = 3
-        #     #                 self.motor_cmd.data = torque 
-        #     #                 self.motor_cmd_pub.publish(self.motor_cmd)
-        #     #                 torque_mode = True
-        #     #                 break
-        #     #         while torque_mode:
-        #     #             position_fb = self.send_request(2)
-        #     #             current_fb = self.send_request(1)
-        #     #             if position_fb<=end_point:
-        #     #                 self.motor_cmd.cmd = 2
-        #     #                 self.motor_cmd.data = 0 
-        #     #                 self.motor_cmd_pub.publish(self.motor_cmd)
-        #                     # if current_fb>threshold1:  
-        #                     #     self.motor_cmd.cmd = 3
-        #                     #     self.motor_cmd.data = torque 
-        #                     #     self.motor_cmd_pub.publish(self.motor_cmd)
+            while True:
+                if motor_ready:
+                    self.motor_cmd.cmd = 5
+                    self.motor_cmd.data = direction 
+                    self.motor_cmd_pub.publish(self.motor_cmd)
+                    while motor_ready:
+                        current_fb = self.send_request(1)
+                        if current_fb>threshold1:  
+                            self.motor_cmd.cmd = 3
+                            self.motor_cmd.data = torque 
+                            self.motor_cmd_pub.publish(self.motor_cmd)
+                            torque_mode = True
+                            break
+                    while torque_mode:
+                        position_fb = self.send_request(2)
+                        current_fb = self.send_request(1)
+                        if position_fb<=end_point:
+                            self.motor_cmd.cmd = 2
+                            self.motor_cmd.data = 0 
+                            self.motor_cmd_pub.publish(self.motor_cmd)
+                            if current_fb<(-threshold1):  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
                             
-        #                 # elif position_fb>=start_point:
-        #                 #     self.motor_cmd.cmd = 2
-        #                 #     self.motor_cmd.data = 0 
-        #                 #     self.motor_cmd_pub.publish(self.motor_cmd)
-        #                     # if current_fb<(-threshold1):  
-        #                     #     self.motor_cmd.cmd = 3
-        #                     #     self.motor_cmd.data = torque 
-        #                     #     self.motor_cmd_pub.publish(self.motor_cmd)
+                        elif position_fb>=start_point:
+                            self.motor_cmd.cmd = 2
+                            self.motor_cmd.data = 0 
+                            self.motor_cmd_pub.publish(self.motor_cmd)
+                            if current_fb>threshold1:  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
                         
-        #                 # else:  
-        #                 #     self.motor_cmd.cmd = 3
-        #                 #     self.motor_cmd.data = torque 
-        #                 #     self.motor_cmd_pub.publish(self.motor_cmd)
-        #                 #     torque_mode = True
-        #                 #     break
+                        else:  
+                            self.motor_cmd.cmd = 3
+                            self.motor_cmd.data = torque 
+                            self.motor_cmd_pub.publish(self.motor_cmd)
+                            # torque_mode = True
+                            # break
 
-        # elif start_point>0 and end_point>0:
-        #     if start_point>end_point:
-        #         while motor_ready==False:
-        #             position_fb = self.send_request(2)
-        #             if position_fb!=start_point:     
-        #                 self.motor_cmd.cmd = 1
-        #                 self.motor_cmd.data = int(round(start_point,1)) 
-        #                 self.motor_cmd_pub.publish(self.motor_cmd)      
-        #                 motor_ready = False
-        #             else:
-        #                 motor_ready = True
-        #                 break
+        elif start_point>0 and end_point>0:
+            if start_point>end_point:
+                while motor_ready==False:
+                    position_fb = self.send_request(2)
+                    if position_fb!=start_point:     
+                        self.motor_cmd.cmd = 1
+                        self.motor_cmd.data = int(round(start_point,1)) 
+                        self.motor_cmd_pub.publish(self.motor_cmd)      
+                        motor_ready = False
+                    else:
+                        motor_ready = True
+                        break
 
-        #         while True:
-        #             if motor_ready:
-        #                 self.motor_cmd.cmd = 5
-        #                 self.motor_cmd.data = direction 
-        #                 self.motor_cmd_pub.publish(self.motor_cmd)
-        #                 while motor_ready:
-        #                     current_fb = self.send_request(1)
-        #                     if current_fb<threshold1:  
-        #                         self.motor_cmd.cmd = 3
-        #                         self.motor_cmd.data = torque 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         torque_mode = True
-        #                         break
-        #                 while torque_mode:
-        #                     position_fb = self.send_request(2)
-        #                     current_fb = self.send_request(1)
-        #                     if position_fb>=end_point:
-        #                         self.motor_cmd.cmd = 2
-        #                         self.motor_cmd.data = 0 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         if current_fb>threshold1:  
-        #                             self.motor_cmd.cmd = 3
-        #                             self.motor_cmd.data = torque 
-        #                             self.motor_cmd_pub.publish(self.motor_cmd)
+                while True:
+                    if motor_ready:
+                        self.motor_cmd.cmd = 5
+                        self.motor_cmd.data = direction 
+                        self.motor_cmd_pub.publish(self.motor_cmd)
+                        while motor_ready:
+                            current_fb = self.send_request(1)
+                            if current_fb<threshold1:  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                torque_mode = True
+                                break
+                        while torque_mode:
+                            position_fb = self.send_request(2)
+                            current_fb = self.send_request(1)
+                            if position_fb<=end_point:
+                                self.motor_cmd.cmd = 2
+                                self.motor_cmd.data = 0 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                if current_fb<(-threshold1):  
+                                    self.motor_cmd.cmd = 3
+                                    self.motor_cmd.data = torque 
+                                    self.motor_cmd_pub.publish(self.motor_cmd)
                                 
-        #                     elif position_fb<=start_point:
-        #                         self.motor_cmd.cmd = 2
-        #                         self.motor_cmd.data = 0 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         if current_fb<(-threshold1):  
-        #                             self.motor_cmd.cmd = 3
-        #                             self.motor_cmd.data = torque 
-        #                             self.motor_cmd_pub.publish(self.motor_cmd)
+                            elif position_fb>=start_point:
+                                self.motor_cmd.cmd = 2
+                                self.motor_cmd.data = 0 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                if current_fb>threshold1:  
+                                    self.motor_cmd.cmd = 3
+                                    self.motor_cmd.data = torque 
+                                    self.motor_cmd_pub.publish(self.motor_cmd)
                             
-        #                     else:  
-        #                         self.motor_cmd.cmd = 3
-        #                         self.motor_cmd.data = torque 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         torque_mode = True
-        #                         break
-        #     elif start_point<end_point:
-        #         while motor_ready==False:
-        #             position_fb = self.send_request(2)
-        #             if position_fb!=start_point:     
-        #                 self.motor_cmd.cmd = 1
-        #                 self.motor_cmd.data = int(round(start_point,1)) 
-        #                 self.motor_cmd_pub.publish(self.motor_cmd)      
-        #                 motor_ready = False
-        #             else:
-        #                 motor_ready = True
-        #                 break
+                            else:  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                # torque_mode = True
+                                # break
+            elif start_point<end_point:
+                while motor_ready==False:
+                    position_fb = self.send_request(2)
+                    if position_fb!=start_point:     
+                        self.motor_cmd.cmd = 1
+                        self.motor_cmd.data = int(round(start_point,1)) 
+                        self.motor_cmd_pub.publish(self.motor_cmd)      
+                        motor_ready = False
+                    else:
+                        motor_ready = True
+                        break
 
-        #         while True:
-        #             if motor_ready:
-        #                 self.motor_cmd.cmd = 5
-        #                 self.motor_cmd.data = direction 
-        #                 self.motor_cmd_pub.publish(self.motor_cmd)
-        #                 while motor_ready:
-        #                     current_fb = self.send_request(1)
-        #                     if current_fb<threshold1:  
-        #                         self.motor_cmd.cmd = 3
-        #                         self.motor_cmd.data = torque 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         torque_mode = True
-        #                         break
-        #                 while torque_mode:
-        #                     position_fb = self.send_request(2)
-        #                     current_fb = self.send_request(1)
-        #                     if position_fb>=end_point:
-        #                         self.motor_cmd.cmd = 2
-        #                         self.motor_cmd.data = 0 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         if current_fb>threshold1:  
-        #                             self.motor_cmd.cmd = 3
-        #                             self.motor_cmd.data = torque 
-        #                             self.motor_cmd_pub.publish(self.motor_cmd)
+                while True:
+                    if motor_ready:
+                        self.motor_cmd.cmd = 5
+                        self.motor_cmd.data = direction 
+                        self.motor_cmd_pub.publish(self.motor_cmd)
+                        while motor_ready:
+                            current_fb = self.send_request(1)
+                            if current_fb<(-threshold1):  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                torque_mode = True
+                                break
+                        while torque_mode:
+                            position_fb = self.send_request(2)
+                            current_fb = self.send_request(1)
+                            if position_fb>=end_point:
+                                self.motor_cmd.cmd = 2
+                                self.motor_cmd.data = 0 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                if current_fb>threshold1:  
+                                    self.motor_cmd.cmd = 3
+                                    self.motor_cmd.data = torque 
+                                    self.motor_cmd_pub.publish(self.motor_cmd)
                                 
-        #                     elif position_fb<=start_point:
-        #                         self.motor_cmd.cmd = 2
-        #                         self.motor_cmd.data = 0 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         if current_fb<(-threshold1):  
-        #                             self.motor_cmd.cmd = 3
-        #                             self.motor_cmd.data = torque 
-        #                             self.motor_cmd_pub.publish(self.motor_cmd)
+                            elif position_fb<=start_point:
+                                self.motor_cmd.cmd = 2
+                                self.motor_cmd.data = 0 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                if current_fb<(-threshold1):  
+                                    self.motor_cmd.cmd = 3
+                                    self.motor_cmd.data = torque 
+                                    self.motor_cmd_pub.publish(self.motor_cmd)
                             
-        #                     else:  
-        #                         self.motor_cmd.cmd = 3
-        #                         self.motor_cmd.data = torque 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         torque_mode = True
-        #                         break              
+                            else:  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                # torque_mode = True
+                                # break              
 
         elif start_point>0 and end_point<0:
             while motor_ready==False:
@@ -763,7 +768,7 @@ class ApplicationNode(Node,ServoController):
                     break
 
             while True:
-                if motor_ready:
+                # if motor_ready:
                     self.motor_cmd.cmd = 5
                     self.motor_cmd.data = direction 
                     self.motor_cmd_pub.publish(self.motor_cmd)
@@ -819,10 +824,8 @@ class ApplicationNode(Node,ServoController):
                     motor_ready = True
                     break
 
-            
-            for i in range(repetitions):
-                # while True:
-                if motor_ready:
+            while True:
+                # if motor_ready:
                     self.motor_cmd.cmd = 5
                     self.motor_cmd.data = direction 
                     self.motor_cmd_pub.publish(self.motor_cmd)
@@ -855,224 +858,224 @@ class ApplicationNode(Node,ServoController):
                                 self.motor_cmd.data = torque 
                                 self.motor_cmd_pub.publish(self.motor_cmd)
                         
-                        # elif position_fb>end_point and position_fb<start_point:  
-                        #     self.motor_cmd.cmd = 3
-                        #     self.motor_cmd.data = torque 
-                        #     self.motor_cmd_pub.publish(self.motor_cmd)
-                        #     torque_mode = True
-                        #     break
+                        elif position_fb>end_point and position_fb<start_point:  
+                            self.motor_cmd.cmd = 3
+                            self.motor_cmd.data = torque 
+                            self.motor_cmd_pub.publish(self.motor_cmd)
+                            # torque_mode = True
+                            # break
 
-        # elif start_point<0 and end_point>0:
-        #     while motor_ready==False:
-        #         position_fb = self.send_request(2)
-        #         if position_fb!=start_point:     
-        #             self.motor_cmd.cmd = 1
-        #             self.motor_cmd.data = int(round(start_point,1)) 
-        #             self.motor_cmd_pub.publish(self.motor_cmd)      
-        #             motor_ready = False
-        #         else:
-        #             motor_ready = True
-        #             break
+        elif start_point<0 and end_point>0:
+            while motor_ready==False:
+                position_fb = self.send_request(2)
+                if position_fb!=start_point:     
+                    self.motor_cmd.cmd = 1
+                    self.motor_cmd.data = int(round(start_point,1)) 
+                    self.motor_cmd_pub.publish(self.motor_cmd)      
+                    motor_ready = False
+                else:
+                    motor_ready = True
+                    break
 
-        #     while True:
-        #         if motor_ready:
-        #             self.motor_cmd.cmd = 5
-        #             self.motor_cmd.data = direction 
-        #             self.motor_cmd_pub.publish(self.motor_cmd)
-        #             while motor_ready:
-        #                 current_fb = self.send_request(1)
-        #                 if current_fb<threshold1:  
-        #                     self.motor_cmd.cmd = 3
-        #                     self.motor_cmd.data = torque 
-        #                     self.motor_cmd_pub.publish(self.motor_cmd)
-        #                     torque_mode = True
-        #                     break
-        #             while torque_mode:
-        #                 position_fb = self.send_request(2)
-        #                 current_fb = self.send_request(1)
-        #                 if position_fb>=end_point:
-        #                     self.motor_cmd.cmd = 2
-        #                     self.motor_cmd.data = 0 
-        #                     self.motor_cmd_pub.publish(self.motor_cmd)
-        #                     if current_fb>threshold1:  
-        #                         self.motor_cmd.cmd = 3
-        #                         self.motor_cmd.data = torque 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
+            while True:
+                if motor_ready:
+                    self.motor_cmd.cmd = 5
+                    self.motor_cmd.data = direction 
+                    self.motor_cmd_pub.publish(self.motor_cmd)
+                    while motor_ready:
+                        current_fb = self.send_request(1)
+                        if current_fb<(-threshold1):  
+                            self.motor_cmd.cmd = 3
+                            self.motor_cmd.data = torque 
+                            self.motor_cmd_pub.publish(self.motor_cmd)
+                            torque_mode = True
+                            break
+                    while torque_mode:
+                        position_fb = self.send_request(2)
+                        current_fb = self.send_request(1)
+                        if position_fb>=end_point:
+                            self.motor_cmd.cmd = 2
+                            self.motor_cmd.data = 0 
+                            self.motor_cmd_pub.publish(self.motor_cmd)
+                            if current_fb>threshold1:  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
                             
-        #                 elif position_fb<=start_point:
-        #                     self.motor_cmd.cmd = 2
-        #                     self.motor_cmd.data = 0 
-        #                     self.motor_cmd_pub.publish(self.motor_cmd)
-        #                     if current_fb<(-threshold1):  
-        #                         self.motor_cmd.cmd = 3
-        #                         self.motor_cmd.data = torque 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
+                        elif position_fb<=start_point:
+                            self.motor_cmd.cmd = 2
+                            self.motor_cmd.data = 0 
+                            self.motor_cmd_pub.publish(self.motor_cmd)
+                            if current_fb<(-threshold1):  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
                         
-        #                 else:  
-        #                     self.motor_cmd.cmd = 3
-        #                     self.motor_cmd.data = torque 
-        #                     self.motor_cmd_pub.publish(self.motor_cmd)
-        #                     torque_mode = True
-        #                     break
+                        else:  
+                            self.motor_cmd.cmd = 3
+                            self.motor_cmd.data = torque 
+                            self.motor_cmd_pub.publish(self.motor_cmd)
+                            # torque_mode = True
+                            # break
 
-        # elif start_point<0 and end_point<0:
-        #     if start_point>end_point:
-        #         while motor_ready==False:
-        #             position_fb = self.send_request(2)
-        #             if position_fb!=start_point:     
-        #                 self.motor_cmd.cmd = 1
-        #                 self.motor_cmd.data = int(round(start_point,1)) 
-        #                 self.motor_cmd_pub.publish(self.motor_cmd)      
-        #                 motor_ready = False
-        #             else:
-        #                 motor_ready = True
-        #                 break
+        elif start_point<0 and end_point<0:
+            if start_point>end_point:
+                while motor_ready==False:
+                    position_fb = self.send_request(2)
+                    if position_fb!=start_point:     
+                        self.motor_cmd.cmd = 1
+                        self.motor_cmd.data = int(round(start_point,1)) 
+                        self.motor_cmd_pub.publish(self.motor_cmd)      
+                        motor_ready = False
+                    else:
+                        motor_ready = True
+                        break
 
-        #         while True:
-        #             if motor_ready:
-        #                 self.motor_cmd.cmd = 5
-        #                 self.motor_cmd.data = direction 
-        #                 self.motor_cmd_pub.publish(self.motor_cmd)
-        #                 while motor_ready:
-        #                     current_fb = self.send_request(1)
-        #                     if current_fb<threshold1:  
-        #                         self.motor_cmd.cmd = 3
-        #                         self.motor_cmd.data = torque 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         torque_mode = True
-        #                         break
-        #                 while torque_mode:
-        #                     position_fb = self.send_request(2)
-        #                     current_fb = self.send_request(1)
-        #                     if position_fb>=end_point:
-        #                         self.motor_cmd.cmd = 2
-        #                         self.motor_cmd.data = 0 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         if current_fb>threshold1:  
-        #                             self.motor_cmd.cmd = 3
-        #                             self.motor_cmd.data = torque 
-        #                             self.motor_cmd_pub.publish(self.motor_cmd)
+                while True:
+                    if motor_ready:
+                        self.motor_cmd.cmd = 5
+                        self.motor_cmd.data = direction 
+                        self.motor_cmd_pub.publish(self.motor_cmd)
+                        while motor_ready:
+                            current_fb = self.send_request(1)
+                            if current_fb>threshold1:  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                torque_mode = True
+                                break
+                        while torque_mode:
+                            position_fb = self.send_request(2)
+                            current_fb = self.send_request(1)
+                            if position_fb<=end_point:
+                                self.motor_cmd.cmd = 2
+                                self.motor_cmd.data = 0 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                if current_fb<(-threshold1):  
+                                    self.motor_cmd.cmd = 3
+                                    self.motor_cmd.data = torque 
+                                    self.motor_cmd_pub.publish(self.motor_cmd)
                                 
-        #                     elif position_fb<=start_point:
-        #                         self.motor_cmd.cmd = 2
-        #                         self.motor_cmd.data = 0 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         if current_fb<(-threshold1):  
-        #                             self.motor_cmd.cmd = 3
-        #                             self.motor_cmd.data = torque 
-        #                             self.motor_cmd_pub.publish(self.motor_cmd)
+                            elif position_fb>=start_point:
+                                self.motor_cmd.cmd = 2
+                                self.motor_cmd.data = 0 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                if current_fb>threshold1:  
+                                    self.motor_cmd.cmd = 3
+                                    self.motor_cmd.data = torque 
+                                    self.motor_cmd_pub.publish(self.motor_cmd)
                             
-        #                     else:  
-        #                         self.motor_cmd.cmd = 3
-        #                         self.motor_cmd.data = torque 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         torque_mode = True
-        #                         break
-        #     elif start_point<end_point:
-        #         while motor_ready==False:
-        #             position_fb = self.send_request(2)
-        #             if position_fb!=start_point:     
-        #                 self.motor_cmd.cmd = 1
-        #                 self.motor_cmd.data = int(round(start_point,1)) 
-        #                 self.motor_cmd_pub.publish(self.motor_cmd)      
-        #                 motor_ready = False
-        #             else:
-        #                 motor_ready = True
-        #                 break
+                            else:  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                # torque_mode = True
+                                # break
+            elif start_point<end_point:
+                while motor_ready==False:
+                    position_fb = self.send_request(2)
+                    if position_fb!=start_point:     
+                        self.motor_cmd.cmd = 1
+                        self.motor_cmd.data = int(round(start_point,1)) 
+                        self.motor_cmd_pub.publish(self.motor_cmd)      
+                        motor_ready = False
+                    else:
+                        motor_ready = True
+                        break
 
-        #         while True:
-        #             if motor_ready:
-        #                 self.motor_cmd.cmd = 5
-        #                 self.motor_cmd.data = direction 
-        #                 self.motor_cmd_pub.publish(self.motor_cmd)
-        #                 while motor_ready:
-        #                     current_fb = self.send_request(1)
-        #                     if current_fb<threshold1:  
-        #                         self.motor_cmd.cmd = 3
-        #                         self.motor_cmd.data = torque 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         torque_mode = True
-        #                         break
-        #                 while torque_mode:
-        #                     position_fb = self.send_request(2)
-        #                     current_fb = self.send_request(1)
-        #                     if position_fb>=end_point:
-        #                         self.motor_cmd.cmd = 2
-        #                         self.motor_cmd.data = 0 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         if current_fb>threshold1:  
-        #                             self.motor_cmd.cmd = 3
-        #                             self.motor_cmd.data = torque 
-        #                             self.motor_cmd_pub.publish(self.motor_cmd)
+                while True:
+                    if motor_ready:
+                        self.motor_cmd.cmd = 5
+                        self.motor_cmd.data = direction 
+                        self.motor_cmd_pub.publish(self.motor_cmd)
+                        while motor_ready:
+                            current_fb = self.send_request(1)
+                            if current_fb>threshold1:  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                torque_mode = True
+                                break
+                        while torque_mode:
+                            position_fb = self.send_request(2)
+                            current_fb = self.send_request(1)
+                            if position_fb>=end_point:
+                                self.motor_cmd.cmd = 2
+                                self.motor_cmd.data = 0 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                if current_fb>threshold1:  
+                                    self.motor_cmd.cmd = 3
+                                    self.motor_cmd.data = torque 
+                                    self.motor_cmd_pub.publish(self.motor_cmd)
                                 
-        #                     elif position_fb<=start_point:
-        #                         self.motor_cmd.cmd = 2
-        #                         self.motor_cmd.data = 0 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         if current_fb<(-threshold1):  
-        #                             self.motor_cmd.cmd = 3
-        #                             self.motor_cmd.data = torque 
-        #                             self.motor_cmd_pub.publish(self.motor_cmd)
+                            elif position_fb<=start_point:
+                                self.motor_cmd.cmd = 2
+                                self.motor_cmd.data = 0 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                if current_fb<(-threshold1):  
+                                    self.motor_cmd.cmd = 3
+                                    self.motor_cmd.data = torque 
+                                    self.motor_cmd_pub.publish(self.motor_cmd)
                             
-        #                     else:  
-        #                         self.motor_cmd.cmd = 3
-        #                         self.motor_cmd.data = torque 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
-        #                         torque_mode = True
-        #                         break
+                            else:  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
+                                # torque_mode = True
+                                # break
 
-        # elif start_point<0 and end_point==0:
-        #     while motor_ready==False:
-        #         position_fb = self.send_request(2)
-        #         if position_fb!=start_point:     
-        #             self.motor_cmd.cmd = 1
-        #             self.motor_cmd.data = int(round(start_point,1)) 
-        #             self.motor_cmd_pub.publish(self.motor_cmd)      
-        #             motor_ready = False
-        #         else:
-        #             motor_ready = True
-        #             break
+        elif start_point<0 and end_point==0:
+            while motor_ready==False:
+                position_fb = self.send_request(2)
+                if position_fb!=start_point:     
+                    self.motor_cmd.cmd = 1
+                    self.motor_cmd.data = int(round(start_point,1)) 
+                    self.motor_cmd_pub.publish(self.motor_cmd)      
+                    motor_ready = False
+                else:
+                    motor_ready = True
+                    break
 
-        #     while True:
-        #         if motor_ready:
-        #             self.motor_cmd.cmd = 5
-        #             self.motor_cmd.data = direction 
-        #             self.motor_cmd_pub.publish(self.motor_cmd)
-        #             while motor_ready:
-        #                 current_fb = self.send_request(1)
-        #                 if current_fb<threshold1:  
-        #                     self.motor_cmd.cmd = 3
-        #                     self.motor_cmd.data = torque 
-        #                     self.motor_cmd_pub.publish(self.motor_cmd)
-        #                     torque_mode = True
-        #                     break
-        #             while torque_mode:
-        #                 position_fb = self.send_request(2)
-        #                 current_fb = self.send_request(1)
-        #                 if position_fb>=end_point:
-        #                     self.motor_cmd.cmd = 2
-        #                     self.motor_cmd.data = 0 
-        #                     self.motor_cmd_pub.publish(self.motor_cmd)
-        #                     if current_fb>threshold1:  
-        #                         self.motor_cmd.cmd = 3
-        #                         self.motor_cmd.data = torque 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
+            while True:
+                if motor_ready:
+                    self.motor_cmd.cmd = 5
+                    self.motor_cmd.data = direction 
+                    self.motor_cmd_pub.publish(self.motor_cmd)
+                    while motor_ready:
+                        current_fb = self.send_request(1)
+                        if current_fb<threshold1:  
+                            self.motor_cmd.cmd = 3
+                            self.motor_cmd.data = torque 
+                            self.motor_cmd_pub.publish(self.motor_cmd)
+                            torque_mode = True
+                            break
+                    while torque_mode:
+                        position_fb = self.send_request(2)
+                        current_fb = self.send_request(1)
+                        if position_fb>=end_point:
+                            self.motor_cmd.cmd = 2
+                            self.motor_cmd.data = 0 
+                            self.motor_cmd_pub.publish(self.motor_cmd)
+                            if current_fb>threshold1:  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
                             
-        #                 elif position_fb<=start_point:
-        #                     self.motor_cmd.cmd = 2
-        #                     self.motor_cmd.data = 0 
-        #                     self.motor_cmd_pub.publish(self.motor_cmd)
-        #                     if current_fb<(-threshold1):  
-        #                         self.motor_cmd.cmd = 3
-        #                         self.motor_cmd.data = torque 
-        #                         self.motor_cmd_pub.publish(self.motor_cmd)
+                        elif position_fb<=start_point:
+                            self.motor_cmd.cmd = 2
+                            self.motor_cmd.data = 0 
+                            self.motor_cmd_pub.publish(self.motor_cmd)
+                            if current_fb<(-threshold1):  
+                                self.motor_cmd.cmd = 3
+                                self.motor_cmd.data = torque 
+                                self.motor_cmd_pub.publish(self.motor_cmd)
                         
-        #                 else:  
-        #                     self.motor_cmd.cmd = 3
-        #                     self.motor_cmd.data = torque 
-        #                     self.motor_cmd_pub.publish(self.motor_cmd)
-        #                     torque_mode = True
-        #                     break
+                        else:  
+                            self.motor_cmd.cmd = 3
+                            self.motor_cmd.data = torque 
+                            self.motor_cmd_pub.publish(self.motor_cmd)
+                            # torque_mode = True
+                            # break
 
     def send_request(self, a):
         # Prepare the request
